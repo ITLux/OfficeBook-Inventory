@@ -19,7 +19,7 @@ class ContactsController extends OfficeController
             ->join('status', 'peoples.status', '=', 'status.id')
             ->whereIn('status', [1, 3])
             ->orderBy('peoples.surname', 'asc')->get();
-        
+
         $country = $this->country();
         foreach ($peoples as $people){
 
@@ -53,6 +53,7 @@ class ContactsController extends OfficeController
     public function Contact(Request $request, $id)
     {
         $country = $this->country();
+        $settings = $this->settings();
         $people = DB::table('peoples')
             ->select('peoples.*', 'peoples.id as peoples_id', 'status.name as status_name', 'positions.name as position_name', 'addresses.name as addresses_name', 'mailwork.name as mailwork_name', 'mailwork.pass as mailwork_pass')
             ->join('status', 'peoples.status', '=', 'status.id')
@@ -71,7 +72,7 @@ class ContactsController extends OfficeController
             ->get();
 
         $email = '';
-        if($people->mailwork != 1 && Gate::allows('people')){
+        if($people->mailwork != 1 && $settings[8] == 1){
             $email = "<label>E-mail рабочий:</label> <cite><a href='mailto:".$people->mailwork_name."'>".$people->mailwork_name."</a></cite><br />";
         }
         if($people->mailpersonal != ''){
@@ -79,7 +80,7 @@ class ContactsController extends OfficeController
         }
 
         $tel = '';
-        if($people->telwork != '' && Gate::allows('people')){
+        if($people->telwork != '' && $settings[8] == 1){
             $tel = "<label>Рабочий телефон:</label> <cite><a href='tel:".$this->telfix($people->telwork)."'> ".$this->telshort($people->telwork, $country)." </a></cite></br>";
         }
         if($people->telpersonal != ''){
