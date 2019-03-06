@@ -61,7 +61,7 @@
     ```
 8. Закешировать данние настроек
     ```
-    php artisan key:generate
+    php artisan config:cache
     ```
 9. Создать таблицы в базе MySQL
     ```
