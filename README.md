@@ -30,7 +30,7 @@
     ```
     git clone https://github.com/ITLux/OfficeBook-Inventory.git
     ```
-2. Загрузитися приложение в папку OfficeBook-Invent, скопируете содержимое в корневой каталог
+2. Загрузитися приложение в папку OfficeBook-Inventory, скопируете содержимое в корневой каталог
 3. Обновить зависимости проекта:
     ```
     composer update
