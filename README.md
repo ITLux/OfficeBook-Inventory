@@ -55,19 +55,19 @@
     MAIL_PASSWORD=Password
     MAIL_ENCRYPTION=tls
     ```
-7. Сенирировать ключ приложения: 
+7. Сенирировать ключ приложения
     ```
     php artisan key:generate
     ```
-8. Закешировать данние настроек:
+8. Закешировать данние настроек
     ```
     php artisan key:generate
     ```
-9. Создать таблицы в базе MySQL:
+9. Создать таблицы в базе MySQL
     ```
     php artisan migrate
     ```
-10. Заполнить базу данных начальными данными:
+10. Заполнить базу данных начальными данными
     ```
     php artisan db:seed --class=OBITableSeeder
     ```
