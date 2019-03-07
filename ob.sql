@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost
--- Время создания: Фев 25 2019 г., 10:00
+-- Время создания: Мар 03 2019 г., 07:46
 -- Версия сервера: 5.7.22-0ubuntu18.04.1
 -- Версия PHP: 7.2.5-1+ubuntu18.04.1+deb.sury.org+1
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `ob`
+-- База данных: `s102`
 --
 
 -- --------------------------------------------------------
@@ -309,7 +309,7 @@ CREATE TABLE `settings` (
   `id` int(10) UNSIGNED NOT NULL COMMENT 'ID записи',
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Название',
   `data` text COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Данные'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Дамп данных таблицы `settings`
@@ -319,7 +319,12 @@ INSERT INTO `settings` (`id`, `name`, `data`) VALUES
 (1, 'Включить доступ по выбрвным IP, 0 - открыто всем!', '0'),
 (2, 'Название организации', 'ООО OfficeBook'),
 (3, 'Описание организации', 'Офисная книга'),
-(4, 'E-mail администратора', 'admin@mycompany.com');
+(4, 'E-mail администратора', 'admin@mycompany.com'),
+(5, 'Отображать в разделе Office Имущество', '1'),
+(6, 'Отображать в разделе Office Контакты', '1'),
+(7, 'Отображать в разделе Office Должность', '0'),
+(8, 'Отображать в разделе Office Телифон и E-mail рабочий', '0'),
+(9, 'Отображать в разделе Office Адресс', '0');
 
 -- --------------------------------------------------------
 
@@ -665,7 +670,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT для таблицы `settings`
 --
 ALTER TABLE `settings`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'ID записи', AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'ID записи', AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT для таблицы `state`
