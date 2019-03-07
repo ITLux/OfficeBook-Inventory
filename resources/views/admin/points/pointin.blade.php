@@ -61,7 +61,7 @@
                                 <td>
                                     <a href="/admin/inventory/<?=$inventory->id?>" title="Посмотеть подробнее: <?=$inventory->name?>"><?=$inventory->name?></a>
                                     @if (Gate::allows('inventory_edit'))
-                                        <a href="/admin/inventory_edit/<?=$inventory->id?>" title="Редактировать"> <i class="fa fa-fw fa-edit"></i></a>
+                                        <a href="/admin/inventoryedit/<?=$inventory->id?>" title="Редактировать"> <i class="fa fa-fw fa-edit"></i></a>
                                     @endif
                                 </td>
                                 @if (Gate::allows('group'))

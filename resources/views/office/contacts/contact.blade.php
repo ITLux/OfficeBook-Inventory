@@ -5,8 +5,8 @@
 <main>
     <div class="container" >
         <div class="row">
-            <div class="col-md-6">
-                <h1 class="box-title"> <?=$people->surname?> <?=$people->name?></h1>
+            <div class="col-md-7">
+                <h2 class="box-title"> <?=$people->surname?> <?=$people->name?></h2>
                 @if ($settings[7] == 1)
                 <label>Статус:</label> <cite title="Source Title"><?=$people->status_name?></cite><br />
                 <label>Должность:</label> <cite title="Source Title"><?=$people->position_name?></cite><br />
@@ -15,7 +15,7 @@
                 <label>Адрес:</label> <cite title="Source Title"><?=$people->addresses_name?></cite><br />
                 @endif
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 </br>
                 <?=$email?>
                 <?=$tel?>
