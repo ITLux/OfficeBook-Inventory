@@ -85,6 +85,17 @@
 * Логин: admin@mydomen.com
 * Пароль: password
 
+### Демо:
+[ob.itlux.com.ua](http://ob.itlux.com.ua)
+
+Администратор <br/>
+Логин: admin@mydomen.com<br/>
+Пароль: password
+
+Пользователь <br/>
+Логин: vvasilev@gmail.com<br/>
+Пароль: password
+
 ### Лицензия
 OfficeBook Inventory это программное обеспечение с открытым исходным кодом, лицензированное по [MIT license](http://opensource.org/licenses/MIT).
 
