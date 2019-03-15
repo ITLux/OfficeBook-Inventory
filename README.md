@@ -85,8 +85,7 @@
 * Логин: admin@mydomen.com
 * Пароль: password
 
-### Демо:
-[ob.itlux.com.ua](http://ob.itlux.com.ua)
+### Демо: [ob.itlux.com.ua](http://ob.itlux.com.ua)
 
 Администратор <br/>
 Логин: admin@mydomen.com<br/>
