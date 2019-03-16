@@ -73,7 +73,7 @@
     ```
 
 ### Установка: способ №2
-1. Скачать архив приложения [здесь](http://itlux.com.ua/upload/OfficeBook-Inventory_v.1.0.0.zip)
+1. Скачать архив приложения [здесь](http://itlux.com.ua/upload/OfficeBook-Inventory_v.1.0.1.zip)
 2. Загузить в на хостинг
 3. Распаковать
 4. Создать файл .env в корне проекта
