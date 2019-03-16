@@ -16,7 +16,7 @@ class PositionEdit
      */
     public function handle($request, Closure $next)
     {
-        if(!Gate::allows('positionEdit')){
+        if(!Gate::allows('position_edit')){
             $refirect = redirect()->intended('/admin/accessdenied');
             return $refirect;
             //echo"Разрешено!";
