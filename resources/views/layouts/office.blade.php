@@ -77,5 +77,7 @@
 <script src="/DataTables/DataTables-1.10.18/js/jquery.dataTables.js"></script>
 <script src="/js/office.js"></script>
 
+@include('layouts.analytics')
+
 </body>
 </html>

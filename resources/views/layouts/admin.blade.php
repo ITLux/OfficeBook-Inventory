@@ -275,6 +275,8 @@
 
 <script src="/js/admin.js"></script>
 
+@include('layouts.analytics')
+
 </body>
 </html>
 

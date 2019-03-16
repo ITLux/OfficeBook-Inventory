@@ -16,6 +16,7 @@
 </head>
 <body>
 
+@include('layouts.analytics')
 
 </body>
 </html>

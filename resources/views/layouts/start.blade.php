@@ -75,5 +75,8 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="bootstrap/css/bootstrap.min.js"></script>
+
+@include('layouts.analytics')
+
 </body>
 </html>
