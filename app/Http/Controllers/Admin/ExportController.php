@@ -187,7 +187,7 @@ class ExportController extends AdminController
                         ->get();
 
                     //Лист - Инвентарные еденици
-                    $myWorkSheet = new \PhpOffice\PhpSpreadsheet\Worksheet\Worksheet($spreadsheet, 'Инвентарные еденици');
+                    $myWorkSheet = new \PhpOffice\PhpSpreadsheet\Worksheet\Worksheet($spreadsheet, 'Инвентарные единицы');
                     $sheet = $spreadsheet->addSheet($myWorkSheet, 1);
                     $n = 2;
 
@@ -204,7 +204,7 @@ class ExportController extends AdminController
 
                     $sheet->getStyle('A'.$n.':I'.$n)->applyFromArray($tablehrader);
                     $sheet->setCellValue('A1', $header);
-                    $sheet->setCellValue('A'.$n, "Инвентарнй №");
+                    $sheet->setCellValue('A'.$n, "Инвентарный №");
                     $sheet->setCellValue('B'.$n, "Группа");
                     $sheet->setCellValue('C'.$n, "Найменование");
                     $sheet->setCellValue('D'.$n, "Место нахождения");

@@ -194,7 +194,7 @@ class ImportController extends AdminController
                 
                 if($stopimort == 'no'){
                     //Читаем таблицу Инвентарные еденици
-                    $reader->setLoadSheetsOnly('Инвентарные еденици');
+                    $reader->setLoadSheetsOnly('Инвентарные единицы');
                     $spreadsheet = $reader->load($filename);
                     $cells = $spreadsheet->getActiveSheet();
                     $title = $cells->getTitle();
@@ -220,7 +220,7 @@ class ImportController extends AdminController
                             array(
                                 'ID' => $invent_id,
                                 'Группа' => $invent_group,
-                                'Назваеие' => $invent_name,
+                                'Названеие' => $invent_name,
                                 'Место хараения' => $invent_point,
                                 'Ответственный' => $invent_people,
                                 'Статус' => $invent_state,
@@ -229,7 +229,7 @@ class ImportController extends AdminController
                             array(
                                 'ID' => 'required|digits_between:1,100000000000',
                                 'Группа' => 'required|max:100|min:1',
-                                'Назваеие' => 'required|max:100|min:1',
+                                'Названеие' => 'required|max:100|min:1',
                                 'Место хараения' => 'required|max:100|min:1',
                                 'Ответственный' => 'required|max:100|min:1',
                                 'Статус' => 'required|max:50|min:1',
@@ -239,8 +239,8 @@ class ImportController extends AdminController
                         
                         if ($validator->fails()) {                                               
                             $errors = $validator->errors();
-                            $header['invent'] = '<span class="text-red">При импорте инвентарных едениц возникла ошибка!</span>';
-                            $errors_mes = "На листе 'Инвентарные еденици' в строке: ". $row;
+                            $header['invent'] = '<span class="text-red">При импорте инвентарных единиц возникла ошибка!</span>';
+                            $errors_mes = "На листе 'Инвентарные единицы' в строке: ". $row;
                             break;                                                                         
                         }else{
                             $errors = array();
