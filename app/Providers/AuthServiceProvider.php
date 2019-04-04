@@ -34,7 +34,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('history', function ($user) {
             $user = Auth::user();
             if($user->history == 'checked'){
@@ -69,7 +69,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('user_edit', function ($user) {
             $user = Auth::user();
             foreach($user->roles as $role){
@@ -84,7 +84,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('user_delete', function ($user) {
             $user = Auth::user();
             foreach($user->roles as $role){
@@ -204,7 +204,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('position_edit', function ($user) {
             $user = Auth::user();
             foreach($user->roles as $role){
@@ -219,7 +219,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('position_delete', function ($user) {
             $user = Auth::user();
             foreach($user->roles as $role){
@@ -249,7 +249,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('mailwork_edit', function ($user) {
             $user = Auth::user();
             foreach($user->roles as $role){
@@ -264,7 +264,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('mailwork_delete', function ($user) {
             $user = Auth::user();
             foreach($user->roles as $role){
@@ -294,7 +294,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('addresses_edit', function ($user) {
             $user = Auth::user();
             foreach($user->roles as $role){
@@ -309,7 +309,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('addresses_delete', function ($user) {
             $user = Auth::user();
             foreach($user->roles as $role){
@@ -339,7 +339,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('point_edit', function ($user) {
             $user = Auth::user();
             foreach($user->roles as $role) {
@@ -354,7 +354,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('point_delete', function ($user) {
             $user = Auth::user();
             foreach($user->roles as $role) {
@@ -384,7 +384,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('group_edit', function ($user) {
             $user = Auth::user();
             foreach($user->roles as $role) {
@@ -399,7 +399,7 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-        
+
         Gate::define('group_delete', function ($user) {
             $user = Auth::user();
             foreach($user->roles as $role) {

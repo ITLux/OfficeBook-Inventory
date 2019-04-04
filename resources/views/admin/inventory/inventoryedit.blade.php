@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-3 control-label">Имя</label>
+                        <label class="col-sm-3 control-label">Имя*</label>
                         <div class="col-sm-9">
                             <input name="name" type="text" class="form-control" value="<?=$inventory->name?>" >
                         </div>
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-3 control-label">Ответственный сотрудник</label>
+                        <label class="col-sm-3 control-label">Ответственный сотрудник*</label>
                         <div class="col-sm-9">
                             {!!Form::select('peoples', $peoples, $inventory->peoples, ['class' => 'form-control select2', 'style' => 'width: 100%;'])!!}
                         </div>

@@ -44,12 +44,12 @@ class OBITableSeeder extends Seeder
             ],
             [
                 'id' => '2',
-                'name' => 'admin@OfficeBook.com',
+                'name' => 'admin@mydomen.com',
                 'pass' => 'pass'
             ],
             [
                 'id' => '3',
-                'name' => 'info@OfficeBook.com',
+                'name' => 'info@mydomen.com',
                 'pass' => 'pass'
             ],
         ]);
@@ -528,3 +528,4 @@ class OBITableSeeder extends Seeder
         ]);
     }
 }
+

@@ -1,4 +1,4 @@
-# OfficeBook Invent
+﻿# OfficeBook Invent
 
 Веб-приложение OfficeBook Invent предназначено для учета материальных ценностей организации.
 
@@ -10,7 +10,7 @@
 * PHP >= 7.1.3
 
 ### Используемые технологии:
-* PHP Framework Laravel v5.7
+* PHP Framework Laravel v5.8
 * Control Panel Template AdminLTE
 * Bootstrap 3 и 4
 * DataTables example
@@ -73,7 +73,7 @@
     ```
 
 ### Установка: способ №2
-1. Скачать архив приложения [здесь](http://itlux.com.ua/upload/OfficeBook-Inventory_v.1.0.1.zip)
+1. Скачать архив приложения [здесь](http://itlux.com.ua/upload/OfficeBook-Inventory_v.1.0.2.zip)
 2. Загузить в на хостинг
 3. Распаковать
 4. Создать файл .env в корне проекта

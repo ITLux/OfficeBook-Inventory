@@ -183,11 +183,14 @@ class InventoryController extends AdminController
             $booton_writeoff = '';
         }
 
+        $peoples = $this->peoplesmas();
+        unset($peoples['']);
+
         return view('admin.inventory.inventoryedit', array(
             'inventory' => $inventory,
             'groups' => $this->groupmas(),
             'points' => $this->pointmas(),
-            'peoples' => $this->peoplesmas(),
+            'peoples' => $peoples,
             'state' => $state,
             'booton_writeoff' => $booton_writeoff,
             'booton_delist' => $booton_delist,

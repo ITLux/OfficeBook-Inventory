@@ -10,15 +10,22 @@ use DB;
 class AppServiceProvider extends ServiceProvider
 {
     /**
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+
+    /**
      * Bootstrap any application services.
      *
      * @return void
      */
     public function boot()
     {
-        Schema::defaultStringLength(191);
-
-
         //Добавляем во все представления данные из таблици настроек
         try {
             $sets = DB::table('settings')->get();
@@ -38,16 +45,5 @@ class AppServiceProvider extends ServiceProvider
         } catch (\Exception $e) {
 
         }
-
-    }
-
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
     }
 }
