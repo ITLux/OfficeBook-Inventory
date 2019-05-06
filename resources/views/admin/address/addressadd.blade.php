@@ -19,7 +19,7 @@
         @endif
 
         <table class="table">
-            {!! Form::open(['url' => 'admin/аddressadd/'], ['method' => 'post']) !!}
+            {!! Form::open(['url' => 'admin/addressadd/'], ['method' => 'post']) !!}
             {{ Form::token() }}
             <tr>
                 <td width="400"><input name="name" type="text" class="form-control" value="<?=$point['name']?>"</td>
