@@ -26,7 +26,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //Добавляем во все представления данные из таблици настроек
+        Schema::defaultStringLength(191);
+		
+		//Добавляем во все представления данные из таблици настроек
         try {
             $sets = DB::table('settings')->get();
             foreach($sets as $set)
